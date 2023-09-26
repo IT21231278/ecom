@@ -23,7 +23,8 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home.userpage');
+        $product=Product::all();
+        return view('home.userpage',compact('product'));
 
 
     }
