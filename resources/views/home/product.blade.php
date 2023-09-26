@@ -8,7 +8,7 @@
             <div class="row">
 
 
-            @foreach($product as $product)
+            @foreach($product as $products)
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -22,26 +22,26 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="product/{{$product->image}}" alt="">
+                        <img src="product/{{$products->image}}" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           {{$product->title}}                        
+                           {{$products->title}}                        
                         </h5>
 
-                        @if($product->discount_price!=null)
+                        @if($products->discount_price!=null)
 
                         <h6 style="color:red">
                         Discount_Price
                         <br>
-                        ${{$product->discount_price}}
+                        ${{$products->discount_price}}
                         </h6>
 
 
                         <h6 style="text-decoration:line-through;">
                         Price
                         <br>
-                        ${{$product->price}}
+                        ${{$products->price}}
                         </h6>
 
                         @else
@@ -49,7 +49,7 @@
                         <h6 style="color:green">
                         Price
                         <br>                       
-                        ${{$product->price}}
+                        ${{$products->price}}
                         </h6>
 
                         @endif
@@ -59,5 +59,10 @@
                </div>
               @endforeach
             
-         </div>
-      </section>
+              <span style="padding-top:20px;">
+
+              {{!!$product->withQueryString()->links('pagination::bootstrap-5')!!}} 
+
+               </span>     
+             </div>
+</section>
