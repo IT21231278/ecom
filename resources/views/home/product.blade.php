@@ -8,7 +8,7 @@
             <div class="row">
 
 
-            @foreach($product as $products)
+               <!--oreach($product as $product)-->               
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
@@ -22,47 +22,16 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="product/{{$products->image}}" alt="">
+                        <img src="product" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
-                           {{$products->title}}                        
-                        </h5>
-
-                        @if($products->discount_price!=null)
-
-                        <h6 style="color:red">
-                        Discount_Price
-                        <br>
-                        ${{$products->discount_price}}
-                        </h6>
-
-
-                        <h6 style="text-decoration:line-through;">
-                        Price
-                        <br>
-                        ${{$products->price}}
-                        </h6>
-
-                        @else
-
-                        <h6 style="color:green">
-                        Price
-                        <br>                       
-                        ${{$products->price}}
-                        </h6>
-
-                        @endif
-                       
-                  </div>
+                           <!--$product->title}}-->                      </h5>
+                        <h6>
+                        <!--{$product->price}}   -->                       </h6>
+                     </div>
                   </div>
                </div>
-              @endforeach
-            
-              <span style="padding-top:20px;">
-
-              {{!!$product->withQueryString()->links('pagination::bootstrap-5')!!}} 
-
-               </span>     
-             </div>
-</section>
+              <!--ndforeach -->        
+            </div>
+      </section>

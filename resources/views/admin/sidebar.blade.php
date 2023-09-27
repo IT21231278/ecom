@@ -1,20 +1,20 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <!--iv class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
           <a class="sidebar-brand brand-logo" href="index.html"><img src="admin/assets/images/logo.svg" alt="logo" /></a>
           <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="admin/assets/images/logo-mini.svg" alt="logo" /></a>
-        </div>-->       
+        </div>
         <ul class="nav">
           <li class="nav-item profile">
             <div class="profile-desc">
               <div class="profile-pic">
-                <!--iv class="count-indicator">
+                <div class="count-indicator">
                   <img class="img-xs rounded-circle " src="admin/assets/images/faces/face15.jpg" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
                   <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
                   <span>Gold Member</span>
-                </div>-->             
+                </div>
               </div>
               <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
               <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
@@ -74,7 +74,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{url('/edit_product')}}">Add Products </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/view_product')}}">Add Products </a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{url('/show_product')}}">Show Products</a></li>
                 
               </ul>
